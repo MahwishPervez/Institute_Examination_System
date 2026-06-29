@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /ies_final/admin/
+
+# Rule to remove .php extension from URL
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
